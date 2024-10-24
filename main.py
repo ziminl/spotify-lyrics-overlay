@@ -51,7 +51,7 @@ class Worker(QThread):
 
             try:
               if len(lyrics) == 0:
-                self.update_signal.emit("해당 곡의 가사가 등록되어 있지 않습니다.")
+                self.update_signal.emit("no lyrics")#해당 곡의 가사가 등록되어 있지 않습니다.
                 break
             except Exception as e:
               pass
@@ -166,7 +166,7 @@ class LyricsOverlay(QMainWindow):
       self.lyrics_label1.setText(f"<p style='color: white; text-align: center; font-size: 15px;'></p>")
       self.label_idx = 0
       pass
-    if text == "해당 곡의 가사가 등록되어 있지 않습니다." or text == "Spotify is sleeping":
+    if text == "no lyrics" or text == "Spotify is sleeping": #해당 곡의 가사가 등록되어 있지 않습니다.
       self.lyrics_label0.setText(f"<p style='color: white; text-align: center; font-size: 15px;'>{text}</p>")
       self.lyrics_label1.setText(f"<p style='color: white; text-align: center; font-size: 15px;'></p>")
       return
