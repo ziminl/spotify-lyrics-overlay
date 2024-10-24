@@ -19,3 +19,9 @@ https://www.makeuseof.com/tag/spotify-mac-and-windows-keyboard-shortcuts/
 mac
 
 https://www.getmagical.com/blog/spotify-tips-trick-shortcuts
+
+
+
+#credit
+
+i forgot code
